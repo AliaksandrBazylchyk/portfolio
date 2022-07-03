@@ -22,10 +22,11 @@ const Introduction: React.FC = () => {
                     Thats my f*cking best site
                 </span>
                 <div className="introduction-description">
-                    <span>
-                        This portfolio-site showcases my skills in front-end
+                    <span className="introduction-description-text">
+                        This portfolio-site show my skills in front-end
                         development. You can also learn about my projects on
-                        other languages.
+                        other languages here. I have non-commercial experience
+                        with .NET. (Scroll)
                     </span>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 @import 'styles/background';
+@import 'styles/animated-link';
 
 #detach-button-host {
   display: none !important;
@@ -9,12 +10,29 @@ body {
   padding: 0;
   color: #ffffff;
 
+  // Disabled text selecting
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+  user-select: none;
+
+
   &::-webkit-scrollbar {
     display: none;
   }
 }
 
+
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #f58500;
+  position: relative;
 }
+
+span {
+  font-size: 14pt;
+}
+

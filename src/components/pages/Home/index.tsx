@@ -1,7 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import React from 'react'
-import { Fade } from 'react-awesome-reveal'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {Fade, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide} from 'react-awesome-reveal'
 
 import Introduction from '@pages/Home/Introduction'
 
@@ -16,7 +17,7 @@ const Home = () => {
     return (
         <div className="homepage">
             <div className="homepage__icons-handler">
-                <Fade delay={500} cascade triggerOnce>
+                <Roll delay={500} cascade triggerOnce >
                     <a href="https://github.com">
                         <GithubIcon fill="white" />
                     </a>
@@ -28,7 +29,7 @@ const Home = () => {
                     <a href="https://telegram.com">
                         <TelegramIcon fill="#2AABEE" />
                     </a>
-                </Fade>
+                </Roll>
             </div>
 
             <Introduction />
