@@ -1,0 +1,42 @@
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  padding: 0;
+  margin: 0;
+
+  height: Calc(100vh - 60px);
+
+  position: relative;
+
+  &__description-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__background-video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: Calc(100vh - 60px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.introduction-header {
+  font-size: 36pt;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.introduction-description {
+  width: 40%;
+  text-align: center;
+}

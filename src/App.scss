@@ -1,9 +1,17 @@
 @import 'styles/background';
 
+#detach-button-host {
+  display: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 a {

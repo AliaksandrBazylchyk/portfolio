@@ -1,0 +1,13 @@
+.homepage {
+  height: Calc(100vh - 60px);
+  width: 100%;
+  padding-top: 60px;
+
+  &__icons-handler {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    z-index: 1;
+  }
+}

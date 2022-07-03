@@ -3,9 +3,12 @@
   height: 60px;
   background-color: rgba(2, 4, 23, 0.82);;
   margin: 0;
+  position: fixed;
 
   display: flex;
   justify-content: space-between;
+
+  z-index: 1;
 
   &__text-handler {
     display: flex;
