@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(2, 4, 23, 0.82);;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__text-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    &__text {
+      font-size: 14pt;
+    }
+  }
+}
+
