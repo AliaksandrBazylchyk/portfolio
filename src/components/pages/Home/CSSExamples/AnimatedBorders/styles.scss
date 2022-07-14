@@ -1,0 +1,85 @@
+.snake-img-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    top: -80px;
+    left: -80px;
+    right: -80px;
+    bottom: -80px;
+    position: absolute;
+    background-image: conic-gradient(#bc00f1 30deg, transparent 120deg);
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+  }
+
+  & img {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+
+.rainbow-img-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    top: -80px;
+    left: -80px;
+    right: -80px;
+    bottom: -80px;
+    position: absolute;
+    background: linear-gradient(
+                    90deg,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%
+    );
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+  }
+
+  & img {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+

@@ -1,7 +1,6 @@
 import React from 'react'
 
 import BackgroundSpaceLoop from '@assets/introduction-space-loop.mp4'
-
 import './styles.scss'
 
 const Introduction: React.FC = () => {
@@ -18,17 +17,9 @@ const Introduction: React.FC = () => {
             </video>
 
             <div className="introduction__description-handler">
-                <span className="introduction-header">
-                    Thats my f*cking best site
+                <span className="introduction__header">
+                    Hello world
                 </span>
-                <div className="introduction-description">
-                    <span className="introduction-description-text">
-                        This portfolio-site show my skills in front-end
-                        development. You can also learn about my projects on
-                        other languages here. I have non-commercial experience
-                        with .NET. (Scroll)
-                    </span>
-                </div>
             </div>
         </div>
     )

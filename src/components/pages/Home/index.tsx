@@ -1,23 +1,23 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import React from 'react'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {Fade, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide} from 'react-awesome-reveal'
+
+import { Roll } from 'react-awesome-reveal'
 
 import Introduction from '@pages/Home/Introduction'
+import CSSExamples from "@pages/Home/CSSExamples";
 
 import { ReactComponent as GithubIcon } from '@assets/github-small-icon.svg'
 import { ReactComponent as LinkedInIcon } from '@assets/linkedin-small-icon.svg'
 import { ReactComponent as TelegramIcon } from '@assets/telegram-small-icon.svg'
 
 import './styles.scss'
-import Microservice from '@pages/Home/Microservice'
 
 const Home = () => {
     return (
         <div className="homepage">
             <div className="homepage__icons-handler">
-                <Roll delay={500} cascade triggerOnce >
+                <Roll delay={500} cascade triggerOnce>
                     <a href="https://github.com">
                         <GithubIcon fill="white" />
                     </a>
@@ -33,7 +33,7 @@ const Home = () => {
             </div>
 
             <Introduction />
-            <Microservice />
+            <CSSExamples />
         </div>
     )
 }

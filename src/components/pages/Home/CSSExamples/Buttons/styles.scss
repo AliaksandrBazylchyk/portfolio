@@ -1,0 +1,142 @@
+.buttons {
+  width: 60vw;
+
+  display: grid;
+
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 50px;
+
+  &__hover-button {
+    background-color: #faff00;
+
+    width: 100%;
+    height: 40px;
+
+    border: #faff00 solid 2px;
+    border-radius: 5px;
+
+    color: #000000;
+
+    transition: 300ms;
+  }
+
+  &__hover-button:hover {
+    border-color: black;
+    border-radius: 20px;
+  }
+
+  &__bordered-button {
+    position: relative;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    background: none;
+    color: #21ebff;
+    font-size: 16pt;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-top: 2px solid #21ebff;
+    border-bottom: 2px solid #21ebff;
+    border-left: none;
+    border-right: none;
+  }
+
+  &__bordered-button:hover {
+    background: #21ebff;
+    color: #000000;
+    box-shadow: 0 0 50px #21ebff;
+  }
+
+  &__glow-button {
+    border: 0;
+    color: #ffffff;
+    background: #111111;
+    position: relative;
+    z-index: 1;
+    border-right: 1px;
+  }
+
+  &__glow-button::before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00,
+            #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: Calc(100% + 4px);
+    height: Calc(100% + 4px);
+    animation: glow 20s linear infinite;
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  &__glow-button::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  &__snake-button {
+    box-shadow: 16px 14px 20px #1e1e1e;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    //background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__snake-button::before {
+    content: "";
+    background-image: conic-gradient(#bc00f1 30deg, transparent 120deg);
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+  }
+
+  &__snake-button::after {
+    content: "";
+    width: 95%;
+    height: 95%;
+    background: #1e1e1e;
+    border-radius: 10px;
+    border: 0;
+    z-index: 0;
+    position: absolute;
+
+  }
+
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
